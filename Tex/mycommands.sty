@@ -1,0 +1,18 @@
+% Update these every term
+\newcommand{\semester}{Fall 2020}
+\newcommand{\instructor}{Alexander Clark}
+
+\newcommand{\code}[1]{\lstinline[language = Python]{#1}}
+
+\newcommand{\link}[2]{\textcolor{blue}{\href{#1}{#2}}}
+
+
+%%% for notebook-like tex
+% https://tex.stackexchange.com/question/223465/ipython-notebook-cells-with-listings
+
+\newcommand{\output}[1]{\begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
+\prompt{Out}{outcolor}{1}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+[#1]
+\end{Verbatim}
+\end{tcolorbox}}
